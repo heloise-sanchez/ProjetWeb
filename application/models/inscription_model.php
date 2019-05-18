@@ -17,23 +17,23 @@
 						
 		}
 		
-		public function addLibCompo()
+		public function addLibCompo($data)
 		{
-			$date = array(
+			$dataC = array(
 				'nameLib'=>'MyComposers',
-				'idUser'=>$this->input->post('idUser')
+				'idUser'=>$data['idUser']
 			);
-			return $this->db->insert('library',$data);
+			return $this->db->insert('library',$dataC);
 			
 		}
 		
-		public function addLibMusic()
+		public function addLibMusic($data)
 		{
-			$date = array(
+			$dataM = array(
 				'nameLib'=>'MyMusics',
-				'idUser'=>$this->input->post('idUser')
+				'idUser'=>$data['idUser']
 			);
-			return $this->db->insert('library',$data);
+			return $this->db->insert('library',$dataM);
 			
 		}
 	}
