@@ -22,7 +22,7 @@
 	<body>
 		<h2>Connection réussie!</h2>
 		
-		<a href="<?php echo base_url("home/index/"),$idUser;?>" class="button" role="button">Retourner à l'accueil</a>
+		<a href="<?php echo base_url("home/")?>" class="button" role="button">Retourner à l'accueil</a>
 	</body>
 </html>
 
