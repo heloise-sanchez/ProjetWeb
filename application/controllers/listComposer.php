@@ -12,7 +12,7 @@ class ListComposer extends CI_Controller {
 		$data['composers'] = $this->listComposer_model->getComposers($nationality);
 		$data['nationality'] = $nationality;
 		$this->load->view('header');
-		if (isset($_COOKIE['connection'])){
+		if (isset($_COOKIE['user'])){
 			$this->load->view('menuConnected');
 		}
 		else {
