@@ -16,16 +16,10 @@
 			return $query->result();	
 		}
 		
-		/*public function getAlt($idCompo) {
-			$this->db->select('altImage');
-			$this->db->from('image');
-			$this->db->where('idCompo',$idCompo);
-			$query = $this->db->get();
-			return $query->result();	
-		}*/
+		
 		
 		public function getNames($idCompo) {
-			$this->db->select('firstNameCompo,lastNameCompo');
+			$this->db->select('idCompo,firstNameCompo,lastNameCompo');
 			$this->db->from('composer');
 			$this->db->where('idCompo',$idCompo);
 			$query = $this->db->get();
@@ -58,7 +52,7 @@
 		}
 		
 		public function getMusics($idCompo) {
-			$this->db->select('linkMusic,nameMusic');
+			$this->db->select('idMusic,linkMusic,nameMusic');
 			$this->db->from('music');
 			$this->db->where('idCompo',$idCompo);
 			$query = $this->db->get();
