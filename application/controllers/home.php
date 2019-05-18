@@ -4,13 +4,9 @@ class Home extends CI_Controller {
 	//methode appellee
 	public function index() 
 	{
-		$this->load->helper('html');
-		$connection = $this->uri->segment(3);
+		$this->load->helper('url');
 		$this->load->view('header');
-		if ($connection != null){
-			$this->input->set_cookie('connection', '',24*3600, '', '/', '',null,true);
-		}
-		if (isset($_COOKIE['connection'])){
+		if (isset($_COOKIE['user'])){
 			$this->load->view('menuConnected');
 		}
 		else {
