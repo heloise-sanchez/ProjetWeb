@@ -3,26 +3,20 @@ class Libraries extends CI_Controller {
 	
 	public function _construct(){
 		parent::_construct();
-		$this->load->model('libModel');
+		$this->load->model('compoLibModel');
 	}
 	
 	public function index() 
 	{
+		$this->load->model('compoLibModel');
 		$this->load->view('header');
 		$this->load->view('menuConnected');
-		$this->load->view('librariesView');
-	}
-	
-	public function myComposers()
-	{
-		$data['myComposers'] = $this->libModel->getCompoFav();
-		$this->load->view('myComposers', $data);
-	}
-	
-	public function myMusics()
-	{
-		$data['myMusics'] = $this->libModel->getMusicFav();
-		$this->load->view('myComposers', $data);
+		if (isset($_COOKIE['user'])){
+			$iduser=$_COOKIE['user'];
+		}
+		$data['myComposers']=$this->compoLibModel->getCompoFav($iduser);
+		$data['myMusics']=$res = $this->compoLibModel->getMusicFav($iduser);
+		$this->load->view('librariesView',$data);
 	}
 	
 }
