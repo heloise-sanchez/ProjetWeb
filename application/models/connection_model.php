@@ -17,32 +17,5 @@
 			return $query->row_array();
 		}
 
-		
-
-			
-		
-		
 	}
 ?>
-
-
-<?php 
-
-
-
-
-
-
-//$query = $this->db->query('select user.password from user where user.email=?',$email);
-		//	$password = $query->row_array();
-			//var_dump($password);
-			//var_dump($givedPassword);
-			//var_dump($email);
-		//	$login=password_verify($password['password'],$givedPassword);
-		//	var_dump($login);
-			/*if (password_verify($givedPassword,$password['password'])==true) {
-				return true;
-			}
-			else {
-				return false;
-			}*/
