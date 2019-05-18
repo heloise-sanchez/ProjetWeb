@@ -9,38 +9,46 @@
 		
 		protected $table = 'contain';
 		
-		public function getCompoFav(){
+		public function getCompoFav($iduser){
+			$query = $this->db->query('select i.idCompo, c.lastNameCompo,c.firstNameCompo from composer c, include i, library l where l.idUser=? and l.numLib = i.numLib and i.idCompo=c.idCompo',$iduser);
+			return $query->result();
 			
+		}
+		
+		public function getMusicFav($iduser){
+			$query = $this->db->query('select m.linkMusic,m.nameMusic from music m, contain c, library l where l.idUser=? and l.numLib = c.numLib and c.idMusic=m.idMusic',$iduser);
+			return $query->result();
 			
 		}
 		
 		
 		
-		
-		public function addCompoFav() {
-			$this->db->select('numLib');
-			$this->db->from('library','user');
-			$this->db->join('library', 'library.idUser = user.idUser');
-			$this->db->where('nameLib','MyComposers');
-			$query = $this->db->get();
-			$data = array(
-				'numLib' => $query,
-				'idCompo' => $idCompo
-			);		
-			return $this->db->insert($table->$data);	
+		public function addCompoFav($data) {
+			$iduser=$data['iduser'];
+			$idcompo=intval($data['idcompo']);
+			$query = $this->db->query('select l.numLib from library l where l.idUser = ? and l.nameLib = "myComposers"',$iduser);
+			$row = $query->row_array();
+			$numlib=intval($row['numLib']);
+			
+			$dataI = array(
+				'numLib' => $numlib,
+				'idCompo' => $idcompo
+			);
+			return $this->db->insert('include',$dataI);
 		}
 		
-		public function addMusicFav() {
-			$this->db->select('numLib');
-			$this->db->from('library','user');
-			$this->db->join('library', 'library.idUser = user.idUser');
-			$this->db->where('nameLib','MyMusics');
-			$query = $this->db->get();
-			$data = array(
-				'numLib' => $query,
-				'idMusic' => $idMusic
-			);		
-			return $this->db->insert($table->$data);	
+		public function addMusicFav($data) {			
+			$iduser=$data['iduser'];
+			$idmusic=intval($data['idmusic']);
+			$query = $this->db->query('select l.numLib from library l where l.idUser = ? and l.nameLib = "myMusics"',$iduser);
+			$row = $query->row_array();
+			$numlib=intval($row['numLib']);
+			
+			$dataI = array(
+				'numLib' => $numlib,
+				'idMusic' => $idmusic
+			);
+			return $this->db->insert('contain',$dataI);
 		}
 	}
 ?>
