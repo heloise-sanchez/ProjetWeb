@@ -23,9 +23,11 @@
 			<?php } ?>
 			<?php foreach ($names as $name) {
 				echo $name->firstNameCompo, ' ' , $name->lastNameCompo; 
+				$idcompo=$name->idCompo;
 			}?>
 			</h2>
-			<a href="<?php echo base_url("composer/addCompoFav")?>" class="btn btn-info" role="button">Ajouter à Mes compositeurs favoris</a>
+			
+			<a href="<?php echo base_url("composer/addCompoFav/"),$idcompo;?>" class="btn btn-info" role="button">Ajouter à Mes compositeurs favoris</a>
 			
 			<?php foreach ($infos as $info) {?>
 				<p>Date de naissance:</p>
@@ -47,8 +49,9 @@
 			<h3>Ses oeuvres</h3>
 			 <?php foreach($musics as $music) {?>
 				<ul>
+					<?php $idmusic=$music->idMusic; ?>
 					<li><a id='banane' href="<?php echo $music->linkMusic;?>" target="_blank"><?php echo $music->nameMusic;?></a></li>
-					<a href="<?php echo base_url("composer/addMusicFav")?>" class="btn btn-info" role="button">Ajouter à Mes morceaux favoris</a>
+					<a href="<?php echo base_url("composer/addMusicFav/"),$idmusic;?>" class="btn btn-info" role="button">Ajouter à Mes morceaux favoris</a>
 				</ul>								
 			<?php } ?>
 		</div>
