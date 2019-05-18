@@ -81,7 +81,7 @@
 						</div>
 					</li>
 					<li id="listComponent"><a href="<?php echo base_url("libraries");?>">Mes bibliothèques</a></li>
-					<li id="listComponent"><a href="<?php echo base_url("deconnection");?>">Se déconnecter</a></li>
+					<li id="listComponent"><a href="<?php echo base_url("disconnection");?>">Se déconnecter</a></li>
 				</ul>
 		</div>
 	</body>
