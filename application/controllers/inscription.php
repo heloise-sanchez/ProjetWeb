@@ -38,6 +38,8 @@
 			{
 				$this->load->model('inscription_model');
 				$this->inscription_model->add_user($data);
+				$this->inscription_model->addLibCompo($data);
+				$this->inscription_model->addLibMusic($data);
 				$this->load->view('inscriptionSuccessView');
 			}
 		}
