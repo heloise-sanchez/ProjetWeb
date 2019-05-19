@@ -8,10 +8,16 @@
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
-				overflow: hidden;
-				background-color: white;
+				overflow: hidden;				
+				background-color:#f0e6d5;;		
 				color: #6a151e;
 				text-align: center;
+			}
+			.container {
+				background-color:#f0e6d5;;
+			}
+			.body {
+				background-color:#f0e6d5;;
 			}
 		</style>
 
