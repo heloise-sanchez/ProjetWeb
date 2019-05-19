@@ -15,17 +15,6 @@
 				color: black;
 				text-align: center;
 			}
-				a{
-				float:right
-			}
-
-			body {
-				background-color:#FDFAF8;
-			}
-			h2{
-				color: black;
-				text-align: center;
-			}
 			.container {
 				text-align: left;
 			}
@@ -144,7 +133,7 @@
 		
 		<input type="submit" value="envoyer">
 		
-		<a href="<?php echo base_url("home/notConnected");?>" class="button" role="button">Retourner à l'accueil</a>
+		<a href="<?php echo base_url("home");?>" class="button" role="button">Retourner à l'accueil</a>
 		
 		
 	
