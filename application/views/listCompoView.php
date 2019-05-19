@@ -6,8 +6,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>listCompoView</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-	
+		<style>
+		.img-fluid {
+				float: right;
+			}
+			#banane {
+				background-color:#f0e6d5;
+			}
+		</style>
 	</head>
 	
 	<body>

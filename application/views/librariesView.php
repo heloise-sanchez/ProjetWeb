@@ -7,14 +7,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>mesBibliothèques</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.img-fluid {
+				float: right;
+			}
+			#banane {
+				background-color:#f0e6d5;
+			}
+		</style>
 	</head>
 	
 	<body>
 		<div class="container">
 			<h2>Mes bibliothèques</h2>
+			<img class="img-fluid" src="<?php echo base_url("assets/image/biblio.jpg");?>" alt="disques sur étagères et casque audio à côté">
+			
 			
 			<h3> Mes compositeurs</h3>
-			<img class="img-fluid" src="compositeurs.jpg" alt="compositeurs">
+			
 			
 			<ul>
 			<?php foreach ($myComposers as $myComposer) { ?>
@@ -24,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			
 			<h3>Mes morceaux</h3>
-			<img class="img-fluid" src="morceaux.jpg" alt="disques sur étagères et casque audio à côté">
+		
 			
 			<ul>
 			<?php foreach ($myMusics as $myMusic) { ?>

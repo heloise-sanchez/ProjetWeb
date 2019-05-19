@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			}
 			#banane {
 				color: black;
-				background-color: #FDFAF8;
+				background-color: #f0e6d5;
 			}
 		</style>
 
@@ -74,7 +74,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="dropdown-content">
 							<a href="<?php echo base_url("listComposer/getCompo/Allemagne");?>">Allemagne</a>
 							<a href="<?php echo base_url("listComposer/getCompo/Autriche");?>">Autriche</a>
-							<a "<?php echo base_url("listComposer/getCompo/Etats-Unis");?>">Etats-Unis</a>
 							<a href="<?php echo base_url("listComposer/getCompo/France");?>">France</a>
 							<a href="<?php echo base_url("listComposer/getCompo/Italie");?>">Italie</a>
 							<a href="<?php echo base_url("listComposer/getCompo/Pologne");?>">Pologne</a>

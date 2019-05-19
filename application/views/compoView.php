@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="container">
 			<h2>
 			<?php foreach ($images as $image){?>
-			<img class="img-fluid" src="<?php echo $image->srcImage;?>" alt="<?php>echo $image->altImage; ?>" style="float:left">
+			<img class="img-fluid" src="<?php echo base_url("assets/image/"),$image->srcimage;?>" alt="<?php>echo $image->altImage; ?>" style="float:left">
 			<?php } ?>
 			<?php foreach ($names as $name) {
 				echo $name->firstNameCompo, ' ' , $name->lastNameCompo; 
