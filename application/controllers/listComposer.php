@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 class ListComposer extends CI_Controller {
 	
 	function _construct() {		

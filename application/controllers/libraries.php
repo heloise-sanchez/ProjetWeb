@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 class Libraries extends CI_Controller {
 	
 	public function _construct(){
