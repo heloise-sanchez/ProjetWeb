@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<body>
 		<div class="container">
 				<ul id="list">
-					<li id="listComponent"><a href="<?php echo base_url("home");?>">Accueil</a></li>
+					<li id="listComponent"><a href="<?php echo base_url("Home");?>">Accueil</a></li>
 				 
 					<li id="listComponent" class="dropdown">
 						<a href="javascript:void(0)" class="dropbtn">Compositeurs</a>
@@ -83,8 +83,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<a href="<?php echo base_url("ListComposer/getCompo/Suede");?>">Suède</a>														
 						</div>
 					</li>
-					<li id="listComponent"><a href="<?php echo base_url("inscription/create");?>">S'inscrire</a></li>
-					<li id="listComponent"><a href="<?php echo base_url("connection/createForm");?>">Se connecter</a></li>
+					<li id="listComponent"><a href="<?php echo base_url("Inscription/create");?>">S'inscrire</a></li>
+					<li id="listComponent"><a href="<?php echo base_url("Connection/createForm");?>">Se connecter</a></li>
 				</ul>
 		</div>
 	</body>

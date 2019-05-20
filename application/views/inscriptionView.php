@@ -123,7 +123,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<?php echo validation_errors(); ?>
 
-			<?php echo form_open('inscription/create'); ?>
+			<?php echo form_open('Inscription/create'); ?>
 				
 				<div class="form-group">
 
@@ -142,7 +142,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 
 			<?php echo form_close(); ?>
-			<a href="<?php echo base_url("home");?>" class="button" role="button">Retourner à l'accueil</a>
+			<a href="<?php echo base_url("Home");?>" class="button" role="button">Retourner à l'accueil</a>
 		</div>
 	</body>
 </html>

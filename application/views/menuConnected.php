@@ -67,25 +67,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<body>
 		<div class="container">
 				<ul id="list">
-					<li id="listComponent"><a href="<?php echo base_url("home");?>">Accueil</a></li>
+					<li id="listComponent"><a href="<?php echo base_url("Home");?>">Accueil</a></li>
 				 
 					<li id="listComponent" class="dropdown">
 						<a href="javascript:void(0)" class="dropbtn">Compositeurs</a>
 						<div class="dropdown-content">
-							<a href="<?php echo base_url("listComposer/getCompo/Allemagne");?>">Allemagne</a>
-							<a href="<?php echo base_url("listComposer/getCompo/Autriche");?>">Autriche</a>
-							<a "<?php echo base_url("listComposer/getCompo/Etats-Unis");?>">Etats-Unis</a>
-							<a href="<?php echo base_url("listComposer/getCompo/France");?>">France</a>
-							<a href="<?php echo base_url("listComposer/getCompo/Italie");?>">Italie</a>
-							<a href="<?php echo base_url("listComposer/getCompo/Pologne");?>">Pologne</a>
-							<a href="<?php echo base_url("listComposer/getCompo/RepubliqueTcheque");?>">République Tchèque</a>
-							<a href="<?php echo base_url("listComposer/getCompo/Royaume-Uni");?>">Royaume-Uni</a>
-							<a href="<?php echo base_url("listComposer/getCompo/Russie");?>">Russie</a>
-							<a href="<?php echo base_url("listComposer/getCompo/Suede");?>">Suède</a>														
+							<a href="<?php echo base_url("ListComposer/getCompo/Allemagne");?>">Allemagne</a>
+							<a href="<?php echo base_url("ListComposer/getCompo/Autriche");?>">Autriche</a>
+							<a href="<?php echo base_url("ListComposer/getCompo/Etats-Unis");?>">Etats-Unis</a>
+							<a href="<?php echo base_url("ListComposer/getCompo/France");?>">France</a>
+							<a href="<?php echo base_url("ListComposer/getCompo/Italie");?>">Italie</a>
+							<a href="<?php echo base_url("ListComposer/getCompo/Pologne");?>">Pologne</a>
+							<a href="<?php echo base_url("ListComposer/getCompo/RepubliqueTcheque");?>">République Tchèque</a>
+							<a href="<?php echo base_url("ListComposer/getCompo/Royaume-Uni");?>">Royaume-Uni</a>
+							<a href="<?php echo base_url("ListComposer/getCompo/Russie");?>">Russie</a>
+							<a href="<?php echo base_url("ListComposer/getCompo/Suede");?>">Suède</a>														
 						</div>
 					</li>
-					<li id="listComponent"><a href="<?php echo base_url("libraries");?>">Mes bibliothèques</a></li>
-					<li id="listComponent"><a href="<?php echo base_url("disconnection");?>">Se déconnecter</a></li>
+					<li id="listComponent"><a href="<?php echo base_url("Libraries");?>">Mes bibliothèques</a></li>
+					<li id="listComponent"><a href="<?php echo base_url("Disconnection");?>">Se déconnecter</a></li>
 				</ul>
 		</div>
 	</body>

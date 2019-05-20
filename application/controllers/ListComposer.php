@@ -9,8 +9,8 @@ class ListComposer extends CI_Controller {
 	}
 	
 	public function getCompo($nationality) {
-		$this->load->model('listComposer_model');
-		$data['composers'] = $this->listComposer_model->getComposers($nationality);
+		$this->load->model('ListComposer_model');
+		$data['composers'] = $this->ListComposer_model->getComposers($nationality);
 		$data['nationality'] = $nationality;
 		$this->load->view('header');
 		if (isset($_COOKIE['user'])){

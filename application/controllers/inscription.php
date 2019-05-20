@@ -37,10 +37,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			}
 			else
 			{
-				$this->load->model('inscription_model');
-				$this->inscription_model->add_user($data);
-				$this->inscription_model->addLibCompo($data);
-				$this->inscription_model->addLibMusic($data);
+				$this->load->model('Inscription_model');
+				$this->Inscription_model->add_user($data);
+				$this->Inscription_model->addLibCompo($data);
+				$this->Inscription_model->addLibMusic($data);
 				$this->load->view('inscriptionSuccessView');
 			}
 		}

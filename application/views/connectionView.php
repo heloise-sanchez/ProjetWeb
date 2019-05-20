@@ -120,7 +120,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<h2>Connectez-vous</h2>
 		
 		<?php echo validation_errors(); //returns any error messages sent back by the validator. If there are no messages it returns an empty string.?>
-		<?php echo form_open('connection/createForm');// generates the action URL based on the URL in config file, makes application more portable in the event URLs change ?>
+		<?php echo form_open('Connection/createForm');// generates the action URL based on the URL in config file, makes application more portable in the event URLs change ?>
 		
 		<label for="email">E-mail:</label>
 		<input type="email" name="email" value="<?php echo set_value('email'); ?>">
@@ -136,7 +136,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		<input type="submit" value="envoyer">
 		
-		<a href="<?php echo base_url("home");?>" class="button" role="button">Retourner à l'accueil</a>
+		<a href="<?php echo base_url("Home");?>" class="button" role="button">Retourner à l'accueil</a>
 		
 		
 	

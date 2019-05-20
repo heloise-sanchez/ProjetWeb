@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	class Inscription extends CI_Controller {
 		public function index() {
 			$this->load->inscriptionView;
-			$this->load->inscription_model;
+			$this->load->Inscription_model;
 			//Loading libraries and helpers
 			$this->load->helper(array('form', 'url'));
 			$this->load->library('form_validation');

@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			}?>
 			</h2>
 			
-			<a href="<?php echo base_url("composer/addCompoFav/"),$idcompo;?>" class="button" role="button">Ajouter à Mes compositeurs favoris</a>
+			<a href="<?php echo base_url("Composer/addCompoFav/"),$idcompo;?>" class="button" role="button">Ajouter à Mes compositeurs favoris</a>
 			
 			<?php foreach ($infos as $info) {?>
 				<p id='info' >Date de naissance: <?php echo $info->birthDate;?></p> 
@@ -77,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<ul>
 					<?php $idmusic=$music->idMusic; ?>
 					<li><a id='banane' href="<?php echo $music->linkMusic;?>" target="_blank"><?php echo $music->nameMusic;?></a></li>
-					<a href="<?php echo base_url("composer/addMusicFav/"),$idmusic;?>" class="button" role="button">Ajouter à Mes morceaux favoris</a>
+					<a href="<?php echo base_url("Composer/addMusicFav/"),$idmusic;?>" class="button" role="button">Ajouter à Mes morceaux favoris</a>
 				</ul>								
 			<?php } ?>
 		</div>

@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			<ul>
 			<?php foreach ($myComposers as $myComposer) { ?>
-				<li><a id='banane' href="<?php echo base_url("composer/getCompo/"),$myComposer->idCompo; ?>"><?php echo $myComposer->firstNameCompo,'',$myComposer->lastNameCompo;?></a></li>
+				<li><a id='banane' href="<?php echo base_url("Composer/getCompo/"),$myComposer->idCompo; ?>"><?php echo $myComposer->firstNameCompo,'',$myComposer->lastNameCompo;?></a></li>
 			<?php } ?>
 			</ul>
 			

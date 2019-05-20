@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	class Connection extends CI_Controller {
 		public function _construct(){
 			parent:: _construct();
-			$this->load->model('connection_model');//chargement du model
+			$this->load->model('Connection_model');//chargement du model
 			
 		}
 		
@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$this->load->helper('form');
 			$this->load->library('form_validation');
 			
-			$this->load->model('connection_model');
+			$this->load->model('Connection_model');
 	
 			//règles pour que le form soit validé
 			$this->form_validation->set_rules('email', 'E-mail','trim|required|encode_php_tags|valid_email|callback_checkNickname',array('required'=>'Veuillez indiquer votre email.'));
@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		//règle de vérification du form: mot de passe correct ou non
 		public function checkPassword() {
 		
-			$login = $this->connection_model->login($_POST['email']);
+			$login = $this->Connection_model->login($_POST['email']);
 			$givedPassword=$this->input->post('password');
 			if (password_verify($_POST['password'],$login['password'])){
 				return true;
@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 			
 		public function checkNickname() {
-			$log=$this->connection_model->login($_POST['email']);
+			$log=$this->Connection_model->login($_POST['email']);
 			$givedNickname = $this->input->post('nickname');
 			if ($log['idUser']==$givedNickname){
 				return true;

@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<body>
 		<h2>Vous êtes déconnecté! A bientôt!</h2>
 		
-		<a href="<?php echo base_url("home/")?>" class="button" role="button">Retourner à l'accueil</a>
+		<a href="<?php echo base_url("Home")?>" class="button" role="button">Retourner à l'accueil</a>
 	</body>
 </html>
 

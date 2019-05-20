@@ -4,27 +4,27 @@ class LibCompo extends CI_Controller {
 	
 	public function _construct(){
 		parent::_construct();
-		$this->load->model('compoModel');
-		$this->load->model('compoLibModel');
+		$this->load->model('CompoModel');
+		$this->load->model('CompoLibModel');
 		
 		$idCompo = $this->uri->segment(3);
 	}
 	
 	
 	public function addCompoFav($idCompo) {
-		$this->load->model('compoLibModel');
+		$this->load->model('CompoLibModel');
 		
 		if (isset($_COOKIE['user'])){
 		$data['iduser']=$_COOKIE['user'];
 		}
 		$data['idcompo']=$idCompo;
 
-		$this->compoLibModel->addCompoFav($data);
+		$this->CompoLibModel->addCompoFav($data);
 		$this->load->view('librariesView');
 	}
 	
 	public function addMusicFav() {
-		$this->compoLibModel->addMusicFav();
+		$this->CompoLibModel->addMusicFav();
 	}
 }
 
