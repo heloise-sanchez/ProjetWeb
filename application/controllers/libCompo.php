@@ -1,8 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 class LibCompo extends CI_Controller {
-	
-	public function _construct(){
+	function _construct(){
 		parent::_construct();
 		$this->load->model('CompoModel');
 		$this->load->model('CompoLibModel');

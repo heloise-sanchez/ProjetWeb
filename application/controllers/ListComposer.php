@@ -3,8 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class ListComposer extends CI_Controller {
 	
 	function _construct() {		
-		parent::_construct();		
-		
+		parent::_construct();			
 		$nationality = $this->uri->segment(3);
 	}
 	

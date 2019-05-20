@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Composer extends CI_Controller {
 	
 	function _construct(){
-		parent::__construct();
+		parent::_construct();
 		$idCompo = $this->uri->segment(3);
 	}
 	public function getCompo($idCompo) {

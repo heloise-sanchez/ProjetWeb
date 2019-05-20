@@ -3,7 +3,8 @@
 
 	class Inscription_model extends CI_Model
 	{
-		public function _construct(){
+		function _construct(){
+			parent::__construct();
 			$this->load->database();
 		}
 		protected $table = 'user';

@@ -3,8 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	class Connection extends CI_Controller {
 		function _construct(){
 			parent:: _construct();
-			$this->load->model('Connection_model');//chargement du model
-			
+			$this->load->model('Connection_model');//chargement du model	
 		}
 		
 		

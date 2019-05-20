@@ -1,8 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
-	//contructeur
-	//methode appellee
+	function _construct() {		
+		parent::_construct();			
+	}
 	public function index() 
 	{
 		$this->load->helper('url');

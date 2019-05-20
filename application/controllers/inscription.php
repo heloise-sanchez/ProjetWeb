@@ -2,9 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 	class Inscription extends CI_Controller {
 		function _construct(){
-			parent:: _construct();
-			
-			
+			parent:: _construct();	
 		}
 		
 		public function create()
