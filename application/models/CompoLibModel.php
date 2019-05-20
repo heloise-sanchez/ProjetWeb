@@ -3,10 +3,10 @@
 
 	class CompoLibModel extends CI_Model
 	{
-		public function _construct(){
-			$this->load->database();
+		function _construct(){
+			parent::__construct();
 		}
-		
+		$this->load->database();
 		protected $table = 'contain';
 		
 		public function getCompoFav($iduser){

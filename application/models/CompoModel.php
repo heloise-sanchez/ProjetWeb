@@ -3,10 +3,11 @@
 
 	class CompoModel extends CI_Model
 	{
-		public function _construct(){
-			$this->load->database();
+		function _construct(){
+			parent::__construct();
 		}
 		protected $table = 'composer';
+		$this->load->database();
 		
 		public function getImage($idCompo) {
 			$this->db->select('srcimage,altimage');
