@@ -4,9 +4,9 @@
 			parent::__construct();
 		}
 		
-
+		protected $table = 'composer';
 		public function getComposers($nationality) {
-			protected $table = 'composer';
+			
 			$this->load->database();
 			$this->db->select('idCompo,lastNameCompo');
 			$this->db->from('composer');
