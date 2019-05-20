@@ -9,9 +9,9 @@
 		protected $table = 'composer';
 		
 		public function getImage($idCompo) {
-			$this->db->select('srcImage,altImage');
+			$this->db->select('srcimage,altimage');
 			$this->db->from('image');
-			$this->db->where('idCompo',$idCompo);
+			$this->db->where('idcompo',$idCompo);
 			$query = $this->db->get();
 			return $query->result();	
 		}
@@ -19,26 +19,26 @@
 		
 		
 		public function getNames($idCompo) {
-			$this->db->select('idCompo,firstNameCompo,lastNameCompo');
+			$this->db->select('idcompo,firstnamecompo,lastnamecompo');
 			$this->db->from('composer');
-			$this->db->where('idCompo',$idCompo);
+			$this->db->where('idcompo',$idCompo);
 			$query = $this->db->get();
 			return $query->result();	
 		}
 		
 		public function getInfos($idCompo) {
-			$this->db->select('birthDate,deathDate,nationality');
+			$this->db->select('birthdate,deathdate,nationality');
 			$this->db->from('composer');
-			$this->db->where('idCompo',$idCompo);
+			$this->db->where('idcompo',$idCompo);
 			$query = $this->db->get();
 			return $query->result();	
 		}
 		
 		public function getPeriods($idCompo) {
-			$this->db->select('nameEra');
+			$this->db->select('nameera');
 			$this->db->from('period');
-			$this->db->join('composer', 'composer.numEra = period.numEra');
-			$this->db->where('idCompo',$idCompo);
+			$this->db->join('composer', 'composer.numera = period.numera');
+			$this->db->where('idcompo',$idCompo);
 			$query = $this->db->get();
 			return $query->result();
 		}
@@ -46,15 +46,15 @@
 		public function getBios($idCompo) {
 			$this->db->select('biography');
 			$this->db->from('composer');
-			$this->db->where('idCompo',$idCompo);
+			$this->db->where('idcompo',$idCompo);
 			$query = $this->db->get();
 			return $query->result();	
 		}
 		
 		public function getMusics($idCompo) {
-			$this->db->select('idMusic,linkMusic,nameMusic');
+			$this->db->select('idmusic,linkmusic,namemusic');
 			$this->db->from('music');
-			$this->db->where('idCompo',$idCompo);
+			$this->db->where('idcompo',$idCompo);
 			$query = $this->db->get();
 			return $query->result();	
 		}

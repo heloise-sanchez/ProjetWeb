@@ -20,8 +20,8 @@
 		public function addLibCompo($data)
 		{
 			$dataC = array(
-				'nameLib'=>'MyComposers',
-				'idUser'=>$data['idUser']
+				'namelib'=>'MyComposers',
+				'iduser'=>$data['idUser']
 			);
 			return $this->db->insert('library',$dataC);
 			
@@ -30,8 +30,8 @@
 		public function addLibMusic($data)
 		{
 			$dataM = array(
-				'nameLib'=>'MyMusics',
-				'idUser'=>$data['idUser']
+				'namelib'=>'MyMusics',
+				'iduser'=>$data['idUser']
 			);
 			return $this->db->insert('library',$dataM);
 			
