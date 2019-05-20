@@ -2,13 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Composer extends CI_Controller {
 	
-	public function _construct(){
+	function _construct(){
 		parent::_construct();
-		
+		$this->load->model('CompoModel');
+		$this->load->model('CompoLibModel');
+		$idCompo = $this->uri->segment(3);
 	}
-	$this->load->model('CompoModel');
-	$this->load->model('CompoLibModel');
-	$idCompo = $this->uri->segment(3);
+	
 	public function getCompo($idCompo) {
 		$this->load->model('CompoModel');
 		$data['names'] = $this->CompoModel->getNames($idCompo);
