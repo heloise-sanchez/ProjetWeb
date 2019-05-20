@@ -1,6 +1,5 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+<?phpdefined('BASEPATH') OR exit('No direct script access allowed');?>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>listCompoView</title>
@@ -18,12 +17,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	<body>
 		<div class ="container">
-			<h2>Compositeurs:  <?php echo $nationality; ?> </h2>
+			<h2>Compositeurs:  <?php echo $nationality;?> </h2>
 			<?php foreach ($composers as $composer){?>
 				<ul>
 					<li><a id='banane' href="<?php echo base_url("Composer/getCompo/"),$composer->idcompo;?>"><?php echo $composer->lastnamecompo;?></a></li>
 				</ul>	
-			<?php } ?>
+			<?php}?>
 		</div>
 		
 	</body>
