@@ -22,7 +22,7 @@
 				<ul>
 					<li><a id='banane' href="<?php echo base_url("Composer/getCompo/"),$composer->idcompo;?>"><?php echo $composer->lastnamecompo;?></a></li>
 				</ul>	
-			<?php}?>
+			<?php }?>
 		</div>
 		
 	</body>
