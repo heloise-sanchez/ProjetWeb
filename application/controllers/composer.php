@@ -6,8 +6,6 @@ class Composer extends CI_Controller {
 		parent::_construct();
 		$idCompo = $this->uri->segment(3);
 	}
-	$this->load->model('CompoModel');
-		$this->load->model('CompoLibModel');
 	public function getCompo($idCompo) {
 		$this->load->model('CompoModel');
 		$data['names'] = $this->CompoModel->getNames($idCompo);
