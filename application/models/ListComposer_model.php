@@ -8,7 +8,7 @@
 		public function getComposers($nationality) {
 			
 			$this->load->database();
-			$this->db->select('composer.idCompo,composer.lastNameCompo');
+			$this->db->select('idcompo,lastnamecompo');
 			$this->db->from('composer');
 			$this->db->where('nationality',$nationality);
 			$query = $this->db->get();
