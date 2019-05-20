@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	class ListComposer_model extends CI_Model {
-		public function _construct(){
+		function _construct(){
 			parent::__construct();
 		}
 		
