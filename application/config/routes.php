@@ -53,7 +53,7 @@ $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['menu/(:any)'] = 'http://localhost/projetweb/listComposer/getCompo/$1';
+/*$route['menu/(:any)'] = 'http://localhost/projetweb/listComposer/getCompo/$1';*/
 /*$route['uri-(:any)/(:any)'] = 'listComposer/getCompo/$1';*/
 
 /*$route['news/create'] = 'news/create';
